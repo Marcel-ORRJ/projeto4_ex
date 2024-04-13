@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+.about-monsterverse {
+    padding: 5vw 2vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    img {
+        margin: auto;
+        height: 50vh;
+    }
+
+    &__text-section {
+        padding-left: 12px;
+        padding-right: 12px;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+
+        p {
+            span {
+                color: $linkTextColor;
+            }
+        }
+    }
+}
