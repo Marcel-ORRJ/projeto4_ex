@@ -2,7 +2,7 @@
 @use 'about-monsterverse';
 @use 'films';
 @use 'about-film';
-@use 'titans';
+@use 'kaijus';
 
 @font-face {
     font-family: Godzilla_MovieFont;
@@ -28,7 +28,7 @@
     }
 }
 
-@mixin text($fontSize: 16px) {
+@mixin text($fontSize: 24px) {
     font-family: BebasNeue, sans-serif;
     font-size: $fontSize;
     color: $secondaryTextColor;
@@ -46,7 +46,7 @@ body {
 }
 
 .text--big {
-    @include text(18px);
+    @include text(28px);
 }
 
 .text {
@@ -54,7 +54,7 @@ body {
 }
 
 .text--small {
-    @include text(12px);
+    @include text(20px);
 }
 
 .title--big {
