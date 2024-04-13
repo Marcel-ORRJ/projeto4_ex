@@ -1,6 +1,8 @@
 @use 'variables' as *;
 @use 'about-monsterverse';
 @use 'films';
+@use 'about-film';
+@use 'titans';
 
 @font-face {
     font-family: Godzilla_MovieFont;
@@ -23,7 +25,6 @@
         transform: translateY(-2px);
         transition: color .2s ease, transform .2s ease;
         color: $linkTextColor;
-        text-decoration: underline;
     }
 }
 
@@ -57,7 +58,7 @@ body {
 }
 
 .title--big {
-    @include title(44px);
+    @include title(56px);
 }
 
 .title {
@@ -65,7 +66,7 @@ body {
 }
 
 .title--small {
-    @include title(28px);
+    @include title(32px);
 }
 
 .link-text {

@@ -1,12 +1,11 @@
 .films {
-    padding: 5vw 2vw;
+    width: 100vw;
+    padding: 10vh 5vw;
     display: block;
     text-align: center;
 
     h2 {
-        margin-bottom: 24px;
-        font-size: 56px;
-        letter-spacing: 5px;
+        margin-bottom: 40px;
     }
 
     &__items {
