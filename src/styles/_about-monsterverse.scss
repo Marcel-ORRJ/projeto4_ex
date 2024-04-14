@@ -28,3 +28,29 @@
         }
     }
 }
+
+@media screen and #{$breakMobile} {
+    .about-monsterverse {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 260px;
+            margin-bottom: 10vw;
+        }
+    }
+}
+
+@media screen and #{$breakTablet} {
+    .about-monsterverse {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 260px;
+            margin-bottom: 10vw;
+        }
+    }
+}

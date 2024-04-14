@@ -15,7 +15,7 @@
     }
 
     &__synopsis {
-        max-width: 60%;
+        max-width: 80%;
         display: block;
         margin: auto;
         margin-top: 40px;
@@ -62,4 +62,36 @@
             text-align: center;
         }
     }
+}
+
+@mixin mobile() {
+    .about-film {
+        &__synopsis {
+            max-width: 90%;
+        }
+
+        &__director {
+            display: block;
+            margin: 0;
+            margin-top: 40px;
+            max-width: 100%;
+
+            img {
+                margin: 0 auto;
+            }
+
+            &__text-section {
+                margin-top: 24px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and #{$breakMobile} {
+    @include mobile;
+}
+
+@media screen and #{$breakTablet} {
+    @include mobile;
 }

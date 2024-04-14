@@ -31,24 +31,24 @@
     <section class="films">
         <h2 class="title--big">Filmes</h2>
         <div class="films__items">
-            <div class="films__items__item">
+            <button data-film-button="film_godzilla_1" class="films__items__item films__items__item--active">
                 <img src="dist/images/godzilla_1/godzilla_1_cover.jpg" alt="Godzilla">
-            </div>
-            <div class="films__items__item">
+            </button>
+            <button data-film-button="film_kong_1" class="films__items__item">
                 <img src="dist/images/kong_1/kong_1_cover.jpg" alt="Kong: Ilha da Caveira">
-            </div>
-            <div class="films__items__item">
+            </button>
+            <button data-film-button="film_godzilla_2" class="films__items__item">
                 <img src="dist/images/godzilla_2/godzilla_2_cover.jpg" alt="Godzilla: Rei dos Monstros">
-            </div>
-            <div class="films__items__item">
+            </button>
+            <button data-film-button="film_godzilla_vs_kong" class="films__items__item">
                 <img src="dist/images/godzilla_vs_kong/godzilla_vs_kong_cover.jpg" alt="Godzilla vs Kong">
-            </div>
-            <div class="films__items__item">
+            </button>
+            <button data-film-button="film_godzilla_x_kong" class="films__items__item">
                 <img src="dist/images/godzilla_x_kong/godzilla_x_kong_cover.jpg" alt="Godzilla x Kong O Novo Império">
-            </div>
+            </button>
         </div>
     </section>
-    <section class="about-film godzilla_1 about-film--active">
+    <section data-film-id="film_godzilla_1" class="about-film about-film--active">
         <h2 class="title--big">
             Godzilla
         </h2>
@@ -73,7 +73,7 @@
         </div>
         <div class="about-film__trailer">
             <h3 class="title">Trailer</h3>
-            <video src="/src/trailers/godzilla_1_trailer_dub.mp4" controls
+            <video id="film_godzilla_1_trailer_dub" src="/src/trailers/godzilla_1_trailer_dub.mp4" controls
                 poster="dist/images/video_poster.png"></video>
         </div>
         <div class="about-film__director">
@@ -91,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section class="about-film kong_1">
+    <section data-film-id="film_kong_1" class="about-film">
         <h2 class="title--big">
             Kong Ilha da Caveira
         </h2>
@@ -118,7 +118,8 @@
         </div>
         <div class="about-film__trailer">
             <h3 class="title">Trailer</h3>
-            <video src="/src/trailers/kong_1_trailer_dub.mp4" controls poster="dist/images/video_poster.png"></video>
+            <video id="film_kong_1_trailer_dub" src="/src/trailers/kong_1_trailer_dub.mp4" controls
+                poster="dist/images/video_poster.png"></video>
         </div>
         <div class="about-film__director">
             <img src="dist/images/kong_1/Jordan_Vogt-Roberts.jpg" alt="Jordan Vogt-Roberts">
@@ -134,7 +135,7 @@
             </div>
         </div>
     </section>
-    <section class="about-film godzilla_2">
+    <section data-film-id="film_godzilla_2" class="about-film">
         <h2 class="title--big">
             Godzilla Rei dos Monstros
         </h2>
@@ -157,7 +158,7 @@
         </div>
         <div class="about-film__trailer">
             <h3 class="title">Trailer</h3>
-            <video src="/src/trailers/godzilla_2_trailer_dub.mp4" controls
+            <video id="film_godzilla_2_trailer_dub" src="/src/trailers/godzilla_2_trailer_dub.mp4" controls
                 poster="dist/images/video_poster.png"></video>
         </div>
         <div class="about-film__director">
@@ -174,7 +175,7 @@
             </div>
         </div>
     </section>
-    <section class="about-film godzilla_vs_kong">
+    <section data-film-id="film_godzilla_vs_kong" class="about-film">
         <h2 class="title--big">
             Godzilla vs Kong
         </h2>
@@ -199,7 +200,7 @@
         </div>
         <div class="about-film__trailer">
             <h3 class="title">Trailer</h3>
-            <video src="/src/trailers/godzilla_vs_kong_trailer_dub.mp4" controls
+            <video id="film_godzilla_vs_kong_trailer_dub" src="/src/trailers/godzilla_vs_kong_trailer_dub.mp4" controls
                 poster="dist/images/video_poster.png"></video>
         </div>
         <div class="about-film__director">
@@ -215,21 +216,22 @@
             </div>
         </div>
     </section>
-    <section class="about-film godzilla_vs_kong">
+    <section data-film-id="film_godzilla_x_kong" class="about-film">
         <h2 class="title--big">
-            Godzilla x Kong O Novo Império
+            Godzilla x Kong O Novo Imperio
         </h2>
         <div class="about-film__synopsis">
             <h3 class="title">
                 Sinopse
             </h3>
             <p class="text">
-                No primeiro crossover do MonstroVerso, universo cinematográfico da Warner Bros, acompanhamos a história
-                dos protetores de Kong que embarcam em uma jornada perigosa para encontrar o verdadeiro lar do gorila
-                gigante. Entretanto, tudo sai do controle quando um Godzilla enfurecido começa a deixar um rastro de
-                destruição pelo planeta Terra. Agora, o rei da ilha da caveira precisará deter o rei dos monstros. Esse
-                combate épico entre os dois titãs, instigado por forças ocultas, é apenas o começo do mistério que jaz
-                no núcleo da Terra. Será que o mundo sobreviverá ao duelo de monstros? Façam as suas apostas!
+                Em Godzilla e Kong: O Novo Império, é um novo capítulo no chamado MonsterVerse, onde depois de terem se
+                encontrado como inimigos em Godzila vs Kong, o poderoso Kong e o temível Godzilla se unem contra uma
+                colossal ameaça mortal escondida no mundo dos humanos, que além de ameaçar sua própria existência também
+                ameaça nossa espécie. Mergulhando profundamente nos mistérios da Ilha da Caveira e nas origens da Terra
+                Oca, o filme irá explorar a antiga batalha de Titãs que ajudou a forjar esses seres extraordinários e os
+                ligou à humanidade para sempre. Dirigido novamente por Adam Wingard, a trama também trará de volta
+                personagens conhecidos, além de introduzir um novo protagonista, interpretado por Dan Stevens.
             </p>
             <div class="about-film__synopsis__rating">
                 <p class="text--big">
@@ -240,7 +242,7 @@
         </div>
         <div class="about-film__trailer">
             <h3 class="title">Trailer</h3>
-            <video src="/src/trailers/godzilla_x_kong_trailer_dub.mp4" controls
+            <video id="film_godzilla_x_kong_trailer_dub" src="/src/trailers/godzilla_x_kong_trailer_dub.mp4" controls
                 poster="dist/images/video_poster.png"></video>
         </div>
         <div class="about-film__director">
@@ -261,28 +263,28 @@
             Kaijus
         </h2>
         <nav class="kaijus__tabs">
-            <button class="kaijus__tabs__button kaijus__tabs__button--active">
+            <button data-tab-button="godzilla_1" class="kaijus__tabs__button kaijus__tabs__button--active">
                 Godzilla
             </button>
-            <button class="kaijus__tabs__button">
+            <button data-tab-button="kong_1" class="kaijus__tabs__button">
                 Kong Ilha da Caveira
             </button>
-            <button class="kaijus__tabs__button">
+            <button data-tab-button="godzilla_2" class="kaijus__tabs__button">
                 Godzilla Rei dos Monstros
             </button>
-            <button class="kaijus__tabs__button">
+            <button data-tab-button="godzilla_vs_kong" class="kaijus__tabs__button">
                 Godzilla vs Kong
             </button>
-            <button class="kaijus__tabs__button">
+            <button data-tab-button="godzilla_x_kong" class="kaijus__tabs__button">
                 Godzilla x Kong O Novo Império
             </button>
         </nav>
-        <ul data-tab-id="godzilla_1" class="kaijus__list">
+        <ul data-tab-id="godzilla_1" class="kaijus__list kaijus__list--active">
             <li class="kaijus__list__item">
                 <h3 class="title--small">
                     Godzilla
                 </h3>
-                <div class="kaijus__list__item__images">
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
                     <img src="dist/images/godzilla_1/titans/godzilla/godzilla_1.jpg" alt="Kaiju Godzilla 1">
                     <img src="dist/images/godzilla_1/titans/godzilla/godzilla_2.jpg" alt="Kaiju Godzilla 2">
                     <img src="dist/images/godzilla_1/titans/godzilla/godzilla_3.jpg" alt="Kaiju Godzilla 3">
@@ -292,14 +294,14 @@
                 <h3 class="title--small">
                     Muto
                 </h3>
-                <div class="kaijus__list__item__images">
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
                     <img src="dist/images/godzilla_1/titans/muto/muto_1.jpg" alt="Kaiju Muto 1">
                     <img src="dist/images/godzilla_1/titans/muto/muto_2.jpg" alt="Kaiju Muto 2">
                     <img src="dist/images/godzilla_1/titans/muto/muto_3.jpg" alt="Kaiju Muto 3">
                 </div>
             </li>
         </ul>
-        <ul data-tab-id="kong_1" class="kaijus__list kaijus__list--active">
+        <ul data-tab-id="kong_1" class="kaijus__list">
             <li class="kaijus__list__item">
                 <h3 class="title--small">
                     King Kong
@@ -308,15 +310,6 @@
                     <img src="dist/images/kong_1/titans/king_kong/king_kong_1.jpg" alt="Kaiju Kong 1">
                     <img src="dist/images/kong_1/titans/king_kong/king_kong_2.jpg" alt="Kaiju Kong 2">
                     <img src="dist/images/kong_1/titans/king_kong/king_kong_3.jpg" alt="Kaiju Kong 3">
-                </div>
-            </li>
-            <li class="kaijus__list__item">
-                <h3 class="title--small">
-                    Mire Squid
-                </h3>
-                <div class="kaijus__list__item__images kaijus__list__item__images--2">
-                    <img src="dist/images/kong_1/titans/mire_squid/mire_squid_1.jpg" alt="Kaiju Mire Squid 1">
-                    <img src="dist/images/kong_1/titans/mire_squid/mire_squid_2.jpg" alt="Kaiju Mire Squid 2">
                 </div>
             </li>
             <li class="kaijus__list__item">
@@ -334,14 +327,6 @@
             </li>
             <li class="kaijus__list__item">
                 <h3 class="title--small">
-                    Psychovulture
-                </h3>
-                <div class="kaijus__list__item__images kaijus__list__item__images--1">
-                    <img src="dist/images/kong_1/titans/psychovulture/psychovulture_1.jpg" alt="Kaiju Psychovulture 1">
-                </div>
-            </li>
-            <li class="kaijus__list__item">
-                <h3 class="title--small">
                     Skullcrawler
                 </h3>
                 <div class="kaijus__list__item__images kaijus__list__item__images--3">
@@ -350,8 +335,200 @@
                     <img src="dist/images/kong_1/titans/skullcrawler/skullcrawler_3.jpg" alt="Kaiju Skullcrawler 3">
                 </div>
             </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Mire Squid
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--2">
+                    <img src="dist/images/kong_1/titans/mire_squid/mire_squid_1.jpg" alt="Kaiju Mire Squid 1">
+                    <img src="dist/images/kong_1/titans/mire_squid/mire_squid_2.jpg" alt="Kaiju Mire Squid 2">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Psychovulture
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--1">
+                    <img src="dist/images/kong_1/titans/psychovulture/psychovulture_1.jpg" alt="Kaiju Psychovulture 1">
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="godzilla_2" class="kaijus__list">
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    King Ghidorah
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
+                    <img src="dist/images/godzilla_2/titans/king_ghidorah/king_ghidorah_1.jpg"
+                        alt="Kaiju King Ghidorah 1">
+                    <img src="dist/images/godzilla_2/titans/king_ghidorah/king_ghidorah_2.jpg"
+                        alt="Kaiju King Ghidorah 2">
+                    <img src="dist/images/godzilla_2/titans/king_ghidorah/king_ghidorah_3.jpg"
+                        alt="Kaiju King Ghidorah 3">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Mothra
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
+                    <img src="dist/images/godzilla_2/titans/mothra/mothra_1.jpg" alt="Kaiju Mothra 1">
+                    <img src="dist/images/godzilla_2/titans/mothra/mothra_2.jpg" alt="Kaiju Mothra 2">
+                    <img src="dist/images/godzilla_2/titans/mothra/mothra_3.jpg" alt="Kaiju Mothra 3">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Rodan
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
+                    <img src="dist/images/godzilla_2/titans/rodan/rodan_1.jpg" alt="Kaiju Rodan 1">
+                    <img src="dist/images/godzilla_2/titans/rodan/rodan_2.jpg" alt="Kaiju Rodan 2">
+                    <img src="dist/images/godzilla_2/titans/rodan/rodan_3.jpg" alt="Kaiju Rodan 3">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Scylla
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
+                    <img src="dist/images/godzilla_2/titans/scylla/scylla_1.jpg" alt="Kaiju Scylla 1">
+                    <img src="dist/images/godzilla_2/titans/scylla/scylla_2.jpg" alt="Kaiju Scylla 2">
+                    <img src="dist/images/godzilla_2/titans/scylla/scylla_3.jpg" alt="Kaiju Scylla 3">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Behemoth
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
+                    <img src="dist/images/godzilla_2/titans/behemoth/behemoth_1.jpg" alt="Kaiju Behemoth 1">
+                    <img src="dist/images/godzilla_2/titans/behemoth/behemoth_2.jpg" alt="Kaiju Behemoth 2">
+                    <img src="dist/images/godzilla_2/titans/behemoth/behemoth_3.jpg" alt="Kaiju Behemoth 3">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Methuselah
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
+                    <img src="dist/images/godzilla_2/titans/methuselah/methuselah_1.jpg" alt="Kaiju Methuselah 1">
+                    <img src="dist/images/godzilla_2/titans/methuselah/methuselah_2.jpg" alt="Kaiju Methuselah 2">
+                    <img src="dist/images/godzilla_2/titans/methuselah/methuselah_3.jpg" alt="Kaiju Methuselah 3">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Margygr
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--1">
+                    <img src="dist/images/godzilla_2/titans/margygr/margygr_1.jpg" alt="Kaiju Margygr 1">
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="godzilla_vs_kong" class="kaijus__list">
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Mechagodzilla
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
+                    <img src="dist/images/godzilla_vs_kong/titans/mechagodzilla/mechagodzilla_1.jpg"
+                        alt="Mechagodzilla 1">
+                    <img src="dist/images/godzilla_vs_kong/titans/mechagodzilla/mechagodzilla_2.jpg"
+                        alt="Mechagodzilla 2">
+                    <img src="dist/images/godzilla_vs_kong/titans/mechagodzilla/mechagodzilla_3.jpg"
+                        alt="Mechagodzilla 3">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Warbat
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--3">
+                    <img src="dist/images/godzilla_vs_kong/titans/warbat/warbat_1.jpg" alt="Kaiju Warbat 1">
+                    <img src="dist/images/godzilla_vs_kong/titans/warbat/warbat_2.jpg" alt="Kaiju Warbat 2">
+                    <img src="dist/images/godzilla_vs_kong/titans/warbat/warbat_3.jpg" alt="Kaiju Warbat 3">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Hellhawk
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--1">
+                    <img src="dist/images/godzilla_vs_kong/titans/hellhawk/hellhawk_1.jpg" alt="Kaiju Hellhawk 1">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Rockclaw
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--1">
+                    <img src="dist/images/godzilla_vs_kong/titans/rockclaw/rockclaw_1.jpg" alt="Kaiju Rockclaw 1">
+                </div>
+            </li>
+        </ul>
+        <ul data-tab-id="godzilla_x_kong" class="kaijus__list">
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Skar King
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--2">
+                    <img src="dist/images/godzilla_x_kong/titans/skar_king/skar_king_1.jpg" alt="Kaiju Skar King 1">
+                    <img src="dist/images/godzilla_x_kong/titans/skar_king/skar_king_2.jpg" alt="Kaiju Skar King 2">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Hollow Earth Lizard
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--2">
+                    <img src="dist/images/godzilla_x_kong/titans/hollow_earth_lizard/hollow_earth_lizard_1.jpg"
+                        alt="Kaiju Hollow Earth Lizard 1">
+                    <img src="dist/images/godzilla_x_kong/titans/hollow_earth_lizard/hollow_earth_lizard_2.jpg"
+                        alt="Kaiju Hollow Earth Lizard 2">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Tiamat
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--2">
+                    <img src="dist/images/godzilla_x_kong/titans/tiamat/tiamat_1.jpg" alt="Kaiju Tiamat 1">
+                    <img src="dist/images/godzilla_x_kong/titans/tiamat/tiamat_2.jpg" alt="Kaiju Tiamat 2">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Shimo
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--1">
+                    <img src="dist/images/godzilla_x_kong/titans/shimo/shimo_1.jpg" alt="Kaiju Shimo 1">
+                </div>
+            </li>
+            <li class="kaijus__list__item">
+                <h3 class="title--small">
+                    Suko
+                </h3>
+                <div class="kaijus__list__item__images kaijus__list__item__images--1">
+                    <img src="dist/images/godzilla_x_kong/titans/suko/suko_1.jpg" alt="Kaiju Suko 1">
+                </div>
+            </li>
         </ul>
     </section>
+    <footer class="footer">
+        <p class="text">
+            Exercício Prático - Projeto 4 (EBAC - Front-End) <br>
+            Desenvolvido por Marcelo-ORRJ ©
+        </p>
+        <span>
+            <a href="https://www.linkedin.com/in/marcelo-roberto-rosa-junior/" target="_blank">
+                <img src="dist/images/LinkedIn.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Marcel-ORRJ" target="_blank">
+                <img src="dist/images/GitHub.png" alt="GitHub">
+            </a>
+        </span>
+    </footer>
     <script src="dist/scripts/main.js"></script>
 </body>
 
