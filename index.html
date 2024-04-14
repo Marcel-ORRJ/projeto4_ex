@@ -11,10 +11,28 @@
 </head>
 
 <body>
+    <header class="header">
+        <h1>
+            <img src="dist/images/MonsterVerse_logo.png" alt="Monsterverse Logo">
+        </h1>
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu__link">
+                    <a href="#monsterverse" class="title--small">Monsterverse</a>
+                </li>
+                <li class="header__menu__link">
+                    <a href="#films" class="title--small">Filmes</a>
+                </li>
+                <li class="header__menu__link">
+                    <a href="#kaijus" class="title--small">Kaijus</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section class="banner">
         <img src="/dist/images/monsterverse_banner.jpg" alt="Monsterverse Banner">
     </section>
-    <section class="about-monsterverse">
+    <section id="monsterverse" class="about-monsterverse">
         <img src="dist/images/MonsterVerse_logo.png" alt="Monsterverse Logo">
         <div class="about-monsterverse__text-section">
             <h2 class="title--big">
@@ -28,7 +46,7 @@
             </p>
         </div>
     </section>
-    <section class="films">
+    <section id="films" class="films">
         <h2 class="title--big">Filmes</h2>
         <div class="films__items">
             <button data-film-button="film_godzilla_1" class="films__items__item films__items__item--active">
@@ -258,7 +276,7 @@
             </div>
         </div>
     </section>
-    <section class="kaijus">
+    <section id="kaijus" class="kaijus">
         <h2 class="title--big">
             Kaijus
         </h2>

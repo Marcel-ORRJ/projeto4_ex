@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const kaijusTabs = document.querySelectorAll('[data-tab-button]');
     let videoTrailer = "film_godzilla_1_trailer_dub";
 
-
     for (let i = 0; i < filmsButtons.length; i++) {
         filmsButtons[i].addEventListener('click', function (e) {
             e.preventDefault();
